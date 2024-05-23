@@ -1,0 +1,16 @@
+build the image
+
+docker build -t akiltipu/node-app:1.0.0 .
+
+docker login
+
+docker push akiltipu/node-app:1.0.0
+
+kubectl apply -f node-app-namespace.yaml 
+or
+kubectl create namespace namespacename
+
+kubectl apply -f node-app-deployment.yaml
+kubectl apply -f node-app-service.yaml
+
+show app on the loadbalancer

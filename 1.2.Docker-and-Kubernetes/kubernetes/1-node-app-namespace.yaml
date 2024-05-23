@@ -1,0 +1,6 @@
+#We can use this file for namespace
+#or we can use kubectl create namespace node-app-ns
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: node-app-ns

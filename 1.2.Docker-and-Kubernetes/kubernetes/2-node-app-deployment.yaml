@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: node-app-ns
+  name: node-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+    spec:
+      containers:
+      - name: node-app
+        image: akiltipu/node-app:1.0.0
+        ports:
+        - containerPort: 3000
+
+        #We can use resource limit like that
+        # resources:
+        #   requests:
+        #     cpu: 100m # Request 100 millicpu
+        #     memory: 128Mi # Request 128 MB memory
+        #   limits:
+        #     cpu: 500m # Limit to 500 millicpu
+        #     memory: 512Mi # Limit to 512 MB memory
