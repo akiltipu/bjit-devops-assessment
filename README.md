@@ -8,7 +8,7 @@ The repository is organized into the following directories:
 
 [**1.1.Infrastructure-Setup:**](1.1.Infrastructure-Setup/README.md) Includes details and instructions for setting up the required infrastructure for the assignment.
 
-[**1.2.Docker-and-Kubernetes:**](1.2.Docker-and-Kubernetes/README,md) Covers my solutions and explanations for the Docker and Kubernetes-related tasks.
+[**1.2.Docker-and-Kubernetes:**](1.2.Docker-and-Kubernetes/README.md) Covers my solutions and explanations for the Docker and Kubernetes-related tasks.
 
 [**2.Real-World-Scenarios:**](2.Real-World-Scenarios/README.md) Presents my approach and solutions to the real-world DevOps scenarios provided in the assignment.
 
